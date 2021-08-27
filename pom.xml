@@ -17,6 +17,29 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  <repositories>
+        <repository>
+            <id>maven-central</id>
+                <name>maven-central</name>
+            <url>http://10.10.11.198:8081/repository/maven-central/</url>
+        </repository>
+         <repository>
+            <id>maven-hosted</id>
+             <name>maven-hosted</name>
+            <url>http://10.10.11.198:8081/repository/maven-hosted/</url>
+        </repository>
+    </repositories>
+
+
+<distributionManagement>
+        <repository>
+            <id>maven-hosted</id>
+             <name>maven-hosted</name>
+            <url>http://10.10.11.198:8081/repository/maven-hosted/</url>
+        </repository>
+    </distributionManagement>
+
 
   <dependencies>
     <dependency>
